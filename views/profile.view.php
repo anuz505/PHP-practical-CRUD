@@ -2,7 +2,7 @@
 include 'partials/header.php';
 ?>
 
-<div class="container mx-auto px-4 py-8">
+<div class="container mx-auto px-4 py-8" style="height: 80vh;">
     <div class="max-w-2xl mx-auto bg-white rounded-lg shadow-md p-6">
         <h2 class="text-2xl font-bold mb-4">Profile</h2>
         
@@ -35,22 +35,22 @@ include 'partials/header.php';
                              class="w-32 h-32 rounded-full object-cover">
                     <?php endif; ?>
                     <div>
-                        <h3 class="text-xl font-semibold mb-2">
+                        <h3 class="text-xl font-semibold mb-2 font-family: 'Roboto', sans-serif; ">
                             <?php echo htmlspecialchars($user['first_name'] . ' ' . $user['last_name']); ?>
                         </h3>
                         <p class="text-gray-600 mb-1">
-                            <span class="font-medium">Email:</span> 
+                            <span class="font-medium font-family: 'Roboto', sans-serif;" " >Email:</span> 
                             <?php echo htmlspecialchars($user['email']); ?>
                         </p>
                         <?php if($user['phone']): ?>
                             <p class="text-gray-600">
-                                <span class="font-medium">Phone:</span> 
+                                <span class="font-medium font-family: 'Roboto', sans-serif;" ">Phone:</span> 
                                 <?php echo htmlspecialchars($user['phone']); ?>
                             </p>
                         <?php endif; ?>
                     </div>
                 </div>
-                <button onclick="toggleForm()" 
+                <button  onclick="toggleForm()" style="background-color: #14213d; font-family: 'Roboto', sans-serif;" 
                         class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
                     Update Profile
                 </button>
@@ -61,7 +61,7 @@ include 'partials/header.php';
         <form method="POST" action="profile.php" enctype="multipart/form-data" 
               id="profile-form" class="<?php echo $hasProfileData ? 'hidden' : ''; ?>">
             <div class="mb-4">
-                <label class="block text-gray-700 text-sm font-bold mb-2">
+                <label class="block text-gray-700 text-sm font-bold mb-2 font-family: 'Roboto', sans-serif;" >
                     Profile Photo
                 </label>
                 <?php if($user['profile_photo']): ?>
@@ -73,7 +73,7 @@ include 'partials/header.php';
             </div>
             
             <div class="mb-4">
-                <label class="block text-gray-700 text-sm font-bold mb-2" for="first_name">
+                <label class="block text-gray-700 text-sm font-bold mb-2 font-family: 'Roboto', sans-serif;" " for="first_name">
                     First Name
                 </label>
                 <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
@@ -82,7 +82,7 @@ include 'partials/header.php';
             </div>
             
             <div class="mb-4">
-                <label class="block text-gray-700 text-sm font-bold mb-2" for="last_name">
+                <label class="block text-gray-700 text-sm font-bold mb-2 font-family: 'Roboto', sans-serif;" " for="last_name">
                     Last Name
                 </label>
                 <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
@@ -91,7 +91,7 @@ include 'partials/header.php';
             </div>
             
             <div class="mb-4">
-                <label class="block text-gray-700 text-sm font-bold mb-2" for="email">
+                <label class="block text-gray-700 text-sm font-bold mb-2 font-family: 'Roboto', sans-serif;" " for="email">
                     Email
                 </label>
                 <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
@@ -100,7 +100,7 @@ include 'partials/header.php';
             </div>
             
             <div class="mb-6">
-                <label class="block text-gray-700 text-sm font-bold mb-2" for="phone">
+                <label class="block text-gray-700 text-sm font-bold mb-2 font-family: 'Roboto', sans-serif;" " for="phone">
                     Phone Number
                 </label>
                 <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
@@ -116,7 +116,7 @@ include 'partials/header.php';
                     </button>
                 <?php endif; ?>
                 <button type="submit" 
-                        class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
+                        class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline font-family: 'Roboto', sans-serif;"  >
                     <?php echo $hasProfileData ? 'Save Changes' : 'Create Profile'; ?>
                 </button>
             </div>
