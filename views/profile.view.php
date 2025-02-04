@@ -2,7 +2,7 @@
 include 'partials/header.php';
 ?>
 
-<div class="container mx-auto px-4 py-8" style="height: 80vh;">
+<div class="container mx-auto px-4 py-8" style="height: 100vh;">
     <div class="max-w-2xl mx-auto bg-white rounded-lg shadow-md p-6">
         <h2 class="text-2xl font-bold mb-4">Profile</h2>
         

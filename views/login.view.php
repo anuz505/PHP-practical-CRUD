@@ -1,7 +1,7 @@
 <?php 
 include 'partials/header.php';
 ?>
-
+<div>
 <div class="container mx-auto px-4 py-8 bg-e5e5e5">
     <div class="max-w-md mx-auto bg-white rounded-lg shadow-md p-6">
         <h2 class="text-2xl font-bold mb-4" style="color: #14213d; font-family: 'Bebas Neue', sans-serif;">Login</h2>

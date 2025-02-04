@@ -9,8 +9,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body class="bg-e5e5e5">
-    <nav class="bg-14213d p-4">
-        <div class="container mx-auto flex justify-between items-center >
+    <nav class="bg-14213d p-4 border-b-2 border-gray-500">
+        <div class="container mx-auto flex justify-between items-center ">
             <a href="index.php" class="text-fca311 text-xl font-bold" style="font-family: 'Bebas Neue', sans-serif;">PHP Practical Assignment</a>
             <div>
                 <?php if(isset($_SESSION['user_id'])): ?>
