@@ -1,7 +1,7 @@
 
 <?php
 require_once 'config.php';
-include 'header.php';
+include 'partials/header.php';
 ?>
 
 <div class="container mx-auto px-4 py-8">
@@ -13,4 +13,4 @@ include 'header.php';
     <?php endif; ?>
 </div>
 
-<?php include 'footer.php'; ?>
+<?php include 'partials/footer.php'; ?>
