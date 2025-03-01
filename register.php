@@ -1,5 +1,4 @@
 <?php
-
 require_once 'config.php';
 
 if($_SERVER['REQUEST_METHOD'] == 'POST') {
@@ -7,7 +6,6 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
     $lastName = $_POST['last_name'];
     $email = $_POST['email'];
     $password = $_POST['password'];
-    $confirmPassword = $_POST['confirm_password'];
     $errors = [];
 
     // Validate email
@@ -27,10 +25,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
         $errors[] = "Password must be at least 8 characters long";
     }
 
-    // Check if passwords match
-    if($password !== $confirmPassword) {
-        $errors[] = "Passwords do not match";
-    }
+  
 
     // If no errors, create the user
     if(empty($errors)) {
